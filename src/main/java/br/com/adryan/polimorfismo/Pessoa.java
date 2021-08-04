@@ -9,8 +9,8 @@ public abstract class Pessoa {
 	}
 
 	public abstract Boolean validarDocumento();
-	/*public abstract String gerarDocumento(); bonus-one
-	public abstract String getDocumentoFormatado(); bonus-two*/
+	public abstract String gerarDocumento();
+	public abstract String getDocumentoFormatado();
 	
 	public String getDocumento() {
 		return documento;
