@@ -15,18 +15,18 @@ public class AppTest {
     public static void main(String[] args) {
     	
     	PessoaFisica Adryan = new PessoaFisica("12453275933");
-    	System.out.println(Adryan.validarDocumento());
-    	System.out.println(Adryan.gerarDocumento());
-    	System.out.println(Adryan.getDocumentoFormatado());
+    	System.out.println("CPF: " + Adryan.validarDocumento());
+    	System.out.println("Documento: " + Adryan.gerarDocumento());
+    	System.out.println("Documento formatado: " + Adryan.getDocumentoFormatado());
     	
-    	PessoaJuridica Terabyte = new PessoaJuridica("079939730001");
-    	System.out.println(Terabyte.validarDocumento());
-    	System.out.println(Terabyte.gerarDocumento());
-    	System.out.println(Terabyte.getDocumentoFormatado());
+    	PessoaJuridica Terabyte = new PessoaJuridica("18781203000128");
+    	System.out.println("\nCNPJ: " + Terabyte.validarDocumento());
+    	System.out.println("Documento: " + Terabyte.gerarDocumento());
+    	System.out.println("Documento formatado: " + Terabyte.getDocumentoFormatado());
     	
-    	System.out.println(new Soma(5, 3).calcular());
-    	System.out.println(new Subtracao(5, 3).calcular());
-    	System.out.println(new Divisao (4, 2).calcular());
-    	System.out.println(new Multiplicacao (5, 4).calcular());
+    	System.out.println("\nSoma: " + new Soma(5, 3).calcular());
+    	System.out.println("\nSubtração: " + new Subtracao(5, 3).calcular());
+    	System.out.println("\nDivisão: " + new Divisao (4, 2).calcular());
+    	System.out.println("\nMultiplicação : " + new Multiplicacao (5, 4).calcular());
     }
 }

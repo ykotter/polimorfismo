@@ -32,8 +32,10 @@ public class PessoaFisica extends Pessoa {
 
 	@Override
 	public String getDocumentoFormatado() {
-		// TODO Auto-generated method stub
-		return null;
+		if (!this.validarDocumento()) {
+			return this.getDocumento();
+		}
+		return this.getDocumento().replaceAll("(\\d{3})(\\d{3})(\\d{3})(\\d{2})", "$1.$2.$3-$4");
 	}
 	
 	private String gerarCpf(final String preDocumento) {
